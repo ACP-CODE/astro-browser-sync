@@ -1,0 +1,42 @@
+{
+  "name": "astro-browser-sync",
+  "title": "Astro Integration BrowserSync",
+  "version": "1.1.2",
+  "type": "module",
+  "description": "Integrate BrowserSync into Astro.",
+  "author": "ACPAMOY <dev@acp-inc.cc>",
+  "scripts": {
+    "build": "lightrix build 'src/**/*.ts'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ACP-CODE/astro-browser-sync.git"
+  },
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "main": "./src/index.ts",
+  "types": "./index.d.ts",
+  "files": [
+    "src",
+    "index.d.ts",
+    "CHANGELOG.md"
+  ],
+  "keywords": [
+    "withastro",
+    "astro-integration"
+  ],
+  "license": "GPL-3.0",
+  "private": false,
+  "bugs": {
+    "url": "https://github.com/ACP-CODE/astro-browser-sync/issues"
+  },
+  "homepage": "https://github.com/ACP-CODE/astro-browser-sync#readme",
+  "devDependencies": {
+    "astro": "^2.7.2"
+  },
+  "dependencies": {
+    "@types/browser-sync":"^2.27.0",
+    "browser-sync": "^2.29.3"
+  }
+}
