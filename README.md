@@ -12,12 +12,12 @@ BrowserSync starts alongside your Astro Server. By default, it uses the `proxy` 
 ```js
 // astro.config.mjs
 import { defineConfig } from "astro/config";
-import BroswerSync from 'astro-browser-sync'
+import broswerSync from 'astro-browser-sync'
 
 export default defineConfig({
     //....
    integrations: [
-        BrowserSync(),
+        browserSync(),
    ]
    //...
 })
