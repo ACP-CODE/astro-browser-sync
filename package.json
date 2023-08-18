@@ -1,31 +1,32 @@
 {
   "name": "astro-browser-sync",
-  "title": "Astro Integration BrowserSync",
-  "version": "1.1.2",
+  "version": "1.2.1",
   "type": "module",
   "description": "Integrate BrowserSync into Astro.",
-  "author": "ACPAMOY <dev@acp-inc.cc>",
+  "exports": {
+    ".": "./dist/index.js",
+    "./package.json": "./package.json"
+  },
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist/index.js",
+    "dist/index.d.ts"
+  ],
   "scripts": {
-    "build": "lightrix build 'src/**/*.ts'"
+    "clear": "rm -rf ./dist",
+    "build": "npm run clear && at-scripts create-pkg-name && at-scripts build && tsc -p tsconfig.build.json"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ACP-CODE/astro-browser-sync.git"
   },
-  "exports": {
-    ".": "./src/index.ts"
-  },
-  "main": "./src/index.ts",
-  "types": "./index.d.ts",
-  "files": [
-    "src",
-    "index.d.ts",
-    "CHANGELOG.md"
-  ],
   "keywords": [
     "withastro",
-    "astro-integration"
+    "astro-integration",
+    "browserSync",
+    "astro-browser-sync"
   ],
+  "author": "Junlin",
   "license": "GPL-3.0",
   "private": false,
   "bugs": {
@@ -33,10 +34,14 @@
   },
   "homepage": "https://github.com/ACP-CODE/astro-browser-sync#readme",
   "devDependencies": {
-    "astro": "^2.7.2"
+    "astro": "^2.10.9",
+    "at-scripts": "file:scripts"
+  },
+  "peerDependencies": {
+    "astro": "^2.0.0-beta.0"
   },
   "dependencies": {
-    "@types/browser-sync":"^2.27.0",
+    "@types/browser-sync": "^2.27.0",
     "browser-sync": "^2.29.3"
   }
 }
