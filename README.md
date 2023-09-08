@@ -1,21 +1,20 @@
-# [astro-browser-sync] 🌎
 
-Add BrowserSync in your Astro project.
+<div align="center">
+<img height="142" alt="" src="./assets/logo.svg">
+</div>
+<div align="center">
 
-```bash
-yarn run v1.22.19
-$ astro dev
-  🚀  astro  v2.10.3 started in 3094ms
-  
-  ┃ Local    http://localhost:3000/
-  ┃ Network  use --host to expose
-  
-23:43:06 [astro-browser-sync] initiated in 6797ms
-23:43:06 [astro-browser-sync] Local http://localhost:4000
-23:43:06 [astro-browser-sync] UI http://localhost:4001
-```
+# astro-browser-sync
+
+</div>
+
+Add BrowserSync in your Astro Project.
+
+![](./assets/astro-browser-sync@1x.svg)
 
 ## Usage
+
+Manual Install,
 
 ```bash
 npm i astro-browser-sync -D
