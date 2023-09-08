@@ -10,7 +10,11 @@
 
 Add BrowserSync in your Astro Project.
 
+<div align="center">
+
 ![](./assets/astro-browser-sync@1x.svg)
+
+</div>
 
 ## Usage
 
